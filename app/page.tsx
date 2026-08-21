@@ -30,7 +30,9 @@ export default function Home() {
       <section className="bg-ink text-bone relative overflow-hidden">
         <Container>
           <div className="relative pt-40 pb-24 md:pt-52 md:pb-32">
-            <Eyebrow tone="scarlet">{copy.tagline}</Eyebrow>
+            {/* ash-on-ink, not scarlet: scarlet at eyebrow size measures 3.32:1
+                on ink and fails AA. Scarlet eyebrows are for bone only. */}
+            <Eyebrow tone="dark">{copy.tagline}</Eyebrow>
 
             <h1 className="font-display text-display-xl mt-8 max-w-[15ch] italic">
               {copy.homeH1.before}

@@ -3,6 +3,7 @@ import { Section } from "@/components/layout/Section";
 import { PageHero } from "@/components/layout/PageHero";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { RuledList, RuledRow } from "@/components/ui/RuledList";
+import { TextLink } from "@/components/ui/ButtonLink";
 import { Timeline } from "@/components/sections/Timeline";
 import { ClosingCTA } from "@/components/sections/ClosingCTA";
 import { workshops, workshopsEmptyState } from "@/content/workshops";
@@ -147,20 +148,23 @@ export default function Program() {
       </Section>
 
       {/* -------------------------------------------------- speakers */}
+      {/* Full-width statement rather than another 4/8 split — this page had
+          three of those in a row and they had stopped reading as separate
+          sections. */}
       <Section tone="ink" rule="top">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
-          <div className="md:col-span-4">
-            <Eyebrow tone="dark">Guest sessions</Eyebrow>
-          </div>
-          <div className="md:col-span-8">
-            <p className="text-body-l max-w-[56ch]">
-              Founders, operators, professors, and people running nonprofits
-              come in to talk about a problem they are dealing with now — not a
-              retrospective on how they succeeded. Members get the same thirty
-              minutes with them that a member gets with the room.
-            </p>
-          </div>
-        </div>
+        <Eyebrow tone="dark">Guest sessions</Eyebrow>
+        <p className="font-display text-display-l mt-8 max-w-[22ch] italic">
+          Guests bring a problem they have not finished solving.
+        </p>
+        <p className="text-body-l text-ash-on-ink mt-10 max-w-[58ch]">
+          Founders, operators, professors, and people running nonprofits. Not a
+          retrospective on how they succeeded — the room gets the same thirty
+          minutes with them that it gets with a member.{" "}
+          <TextLink href="/speakers" tone="dark">
+            See who is speaking
+          </TextLink>
+          .
+        </p>
       </Section>
 
       {/* -------------------------------------------------- timeline */}
