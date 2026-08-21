@@ -40,3 +40,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 out/
+
+# build screenshots are kept, but ignore scratch output
+.DS_Store
