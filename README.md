@@ -8,16 +8,86 @@ static export.
 
 ---
 
-## Running it
+## Setting up
+
+### 1. Install Node
+
+You need **Node 20.9 or newer**. Check what you have:
 
 ```bash
-npm install
-npm run dev      # http://localhost:3000
-npm run build    # static site, written to out/
+node --version
 ```
 
-`npm run build` produces a folder called `out/` containing plain HTML. That
-folder is the whole site — there is no server, no database, and no API.
+If that prints nothing, or a number below 20.9, install the LTS release from
+[nodejs.org](https://nodejs.org). `npm` comes with it — you do not install that
+separately.
+
+### 2. Get the code and install dependencies
+
+```bash
+cd forward-society
+npm install
+```
+
+This reads `package.json` and downloads everything into `node_modules/`. It
+takes about a minute the first time and prints a warning or two, which is
+normal. You only rerun it when someone adds a new dependency.
+
+### 3. Start the dev server
+
+```bash
+npm run dev
+```
+
+Open **http://localhost:3000**. Edit any file in `content/`, save, and the page
+updates in the browser without a refresh. Stop the server with `Ctrl+C`.
+
+Use dev mode while you are editing — it is the only mode that shows the red
+TODO chips marking unfinished content.
+
+### 4. Build the real site
+
+```bash
+npm run build
+```
+
+This writes the finished site to a folder called **`out/`** — plain HTML, CSS,
+and images with no server, no database, and no API behind them. `out/` is what
+gets deployed.
+
+### 5. Preview the built site before you ship it
+
+The build behaves slightly differently from dev mode: TODO chips disappear and
+unconfirmed links vanish. Always look at it before deploying.
+
+```bash
+npx serve out
+```
+
+Open the address it prints (usually http://localhost:3000).
+
+> Do **not** use `npx serve -s out`. The `-s` flag makes every URL serve the
+> homepage, so every page looks fine even when it is broken.
+
+### Checking your work
+
+```bash
+npm run build       # fails loudly if anything is broken
+npx tsc --noEmit    # type errors
+npm run lint        # code style
+```
+
+If `npm run build` succeeds, the site is deployable.
+
+### If something goes wrong
+
+| Symptom | Fix |
+| --- | --- |
+| `command not found: npm` | Node is not installed. Go back to step 1. |
+| `Cannot find module` on `npm run dev` | Run `npm install` again. |
+| Port 3000 already in use | Something else is running. `npm run dev -- -p 3001`. |
+| A change is not showing up | Confirm you saved the file, then stop the server and start it again. |
+| Weird stale errors after pulling changes | `rm -rf .next` then rerun. |
 
 ---
 
