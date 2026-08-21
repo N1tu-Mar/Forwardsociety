@@ -37,7 +37,7 @@ export default function About() {
           </div>
           <div className="md:col-span-8">
             {isReal(site.missionStatement) ? (
-              <p className="font-display text-display-m max-w-[26ch] italic">
+              <p className="font-display font-extrabold text-display-m max-w-[26ch]">
                 {site.missionStatement}
               </p>
             ) : (
@@ -60,7 +60,7 @@ export default function About() {
           <SectionRule position="top" />
           <div className="py-section">
             <Eyebrow tone="dark">The founding belief</Eyebrow>
-            <p className="font-display text-display-l mt-8 max-w-[20ch] italic">
+            <p className="font-display font-extrabold text-display-l mt-8 max-w-[20ch]">
               Most people skip straight to solutions.
             </p>
             <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-12">
@@ -89,7 +89,7 @@ export default function About() {
           <div className="md:col-span-8">
             <dl className="space-y-10">
               <div>
-                <dt className="font-display text-display-m italic">
+                <dt className="font-display font-extrabold text-display-m">
                   Not a case club.
                 </dt>
                 <dd className="text-body-l text-ash mt-3 max-w-[56ch]">
@@ -99,7 +99,7 @@ export default function About() {
                 </dd>
               </div>
               <div>
-                <dt className="font-display text-display-m italic">
+                <dt className="font-display font-extrabold text-display-m">
                   Not a consulting club.
                 </dt>
                 <dd className="text-body-l text-ash mt-3 max-w-[56ch]">
@@ -109,7 +109,7 @@ export default function About() {
                 </dd>
               </div>
               <div>
-                <dt className="font-display text-display-m italic">
+                <dt className="font-display font-extrabold text-display-m">
                   Not major-gated.
                 </dt>
                 <dd className="text-body-l text-ash mt-3 max-w-[56ch]">
@@ -148,7 +148,7 @@ export default function About() {
             <Eyebrow>Who should join</Eyebrow>
           </div>
           <div className="md:col-span-8">
-            <p className="font-display text-display-m max-w-[24ch] italic">
+            <p className="font-display font-extrabold text-display-m max-w-[24ch]">
               {copy.whoLine1}
             </p>
             <p className="text-body-l text-ash mt-8 max-w-[56ch]">
@@ -167,7 +167,7 @@ export default function About() {
           <div className="py-section">
             {/* display-l, not xl: at xl the scarlet clause runs to two full
                 lines and blows past the 2% scarlet ceiling. */}
-            <p className="font-display text-display-l max-w-[20ch] italic">
+            <p className="font-display font-extrabold text-display-l max-w-[20ch]">
               {copy.altHeroLine.before}
               <span className="text-scarlet">{copy.altHeroLine.emphasis}</span>
             </p>

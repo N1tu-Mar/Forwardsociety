@@ -30,7 +30,7 @@ export function Eyebrow({
   return (
     <Tag
       id={id}
-      className={`font-body text-eyebrow uppercase ${toneClass} ${className}`}
+      className={`font-display text-eyebrow font-bold uppercase ${toneClass} ${className}`}
     >
       {children}
     </Tag>

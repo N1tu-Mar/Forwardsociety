@@ -12,12 +12,12 @@ export default function NotFound() {
         <SectionRule position="top" />
         <div className="py-section">
           <Wordmark size="md" theme="dark" />
-          <p className="font-display text-display-l mt-12 max-w-[18ch] italic">
+          <p className="font-display font-extrabold text-display-l mt-12 max-w-[18ch]">
             This page does not exist.
           </p>
           <Link
             href="/"
-            className="font-body text-eyebrow text-scarlet focus-visible:outline-scarlet mt-10 inline-block uppercase focus-visible:outline-2 focus-visible:outline-offset-4"
+            className="font-display text-eyebrow font-bold text-scarlet focus-visible:outline-scarlet mt-10 inline-block uppercase focus-visible:outline-2 focus-visible:outline-offset-4"
           >
             Go to the home page
           </Link>

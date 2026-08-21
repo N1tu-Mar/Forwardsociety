@@ -32,7 +32,7 @@ export function PageHero({
       <Container>
         <div className="relative pt-36 pb-20 md:pt-44 md:pb-24">
           <Eyebrow tone={dark ? "dark" : "light"}>{eyebrow}</Eyebrow>
-          <h1 className="font-display text-display-xl mt-8 max-w-[16ch] italic">
+          <h1 className="font-display font-extrabold text-display-xl mt-8 max-w-[16ch]">
             {title}
           </h1>
           {standfirst ? (

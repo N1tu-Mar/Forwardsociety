@@ -38,7 +38,7 @@ export default function Join() {
             <Eyebrow tone="dark">Who should apply</Eyebrow>
           </div>
           <div className="md:col-span-8">
-            <p className="font-display text-display-m max-w-[24ch] italic">
+            <p className="font-display font-extrabold text-display-m max-w-[24ch]">
               People who can hold a problem open instead of closing it fast.
             </p>
             <p className="text-body-l text-ash-on-ink mt-8 max-w-[58ch]">
@@ -55,7 +55,7 @@ export default function Join() {
           into the copy, so a lighter fall process just renders fewer steps. */}
       <Section tone="ink" rule="top">
         <Eyebrow tone="dark">The process</Eyebrow>
-        <h2 className="font-display text-display-l mt-8 max-w-[16ch] italic">
+        <h2 className="font-display font-extrabold text-display-l mt-8 max-w-[16ch]">
           What happens after you apply.
         </h2>
         <ol className="mt-14 grid grid-cols-1 md:grid-cols-3">
@@ -66,10 +66,10 @@ export default function Join() {
                 i === 0 ? "" : "md:border-l md:pl-8"
               } md:pr-8 ${i === 0 ? "md:pl-0" : ""}`}
             >
-              <span className="font-body text-eyebrow text-ash-on-ink uppercase">
+              <span className="font-display text-eyebrow font-bold text-ash-on-ink uppercase">
                 {step.index}
               </span>
-              <h3 className="font-display text-display-m mt-4 italic">
+              <h3 className="font-display font-extrabold text-display-m mt-4">
                 {step.title}
               </h3>
               <p className="text-body text-ash-on-ink mt-3 max-w-[34ch]">
@@ -100,7 +100,7 @@ export default function Join() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
           <div className="md:col-span-4">
             <Eyebrow tone="dark">Questions</Eyebrow>
-            <h2 className="font-display text-display-m mt-6 max-w-[14ch] italic">
+            <h2 className="font-display font-extrabold text-display-m mt-6 max-w-[14ch]">
               What people ask.
             </h2>
           </div>

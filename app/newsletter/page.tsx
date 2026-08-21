@@ -54,7 +54,7 @@ export default function Newsletter() {
         <div className="mt-12">
           {dispatch.length === 0 ? (
             <div className="border-ink/15 border-t border-b py-14">
-              <p className="font-display text-display-m max-w-[26ch] italic">
+              <p className="font-display font-extrabold text-display-m max-w-[26ch]">
                 {dispatchEmptyState}
               </p>
             </div>
@@ -62,7 +62,7 @@ export default function Newsletter() {
             <RuledList>
               {dispatch.map((issue) => (
                 <RuledRow key={issue.number} index={issue.number}>
-                  <h2 className="font-display text-display-m italic">
+                  <h2 className="font-display font-extrabold text-display-m">
                     {isReal(issue.url) ? (
                       <TextLink href={issue.url}>{issue.title}</TextLink>
                     ) : (
@@ -72,7 +72,7 @@ export default function Newsletter() {
                   <p className="text-body text-ash mt-2 max-w-[52ch]">
                     {issue.summary}
                   </p>
-                  <p className="font-body text-eyebrow text-ash mt-4 uppercase">
+                  <p className="font-display text-eyebrow font-bold text-ash mt-4 uppercase">
                     {issue.date}
                   </p>
                 </RuledRow>

@@ -43,7 +43,7 @@ export function RuledRow({
     >
       {index ? (
         <span
-          className={`font-body text-eyebrow uppercase ${ash} md:col-span-2 md:pt-1.5`}
+          className={`font-display text-eyebrow font-bold uppercase ${ash} md:col-span-2 md:pt-1.5`}
         >
           {index}
         </span>

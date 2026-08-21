@@ -34,7 +34,7 @@ export default function Projects() {
       {/* ------------------------------------------- how selection works */}
       <Section tone="bone" rule="top">
         <Eyebrow>Selection</Eyebrow>
-        <h2 className="font-display text-display-l mt-8 max-w-[18ch] italic">
+        <h2 className="font-display font-extrabold text-display-l mt-8 max-w-[18ch]">
           The club votes. One or two make it.
         </h2>
         <div className="mt-14 grid grid-cols-1 gap-10 md:grid-cols-12">
@@ -67,7 +67,7 @@ export default function Projects() {
             <Eyebrow>What launched means</Eyebrow>
           </div>
           <div className="md:col-span-8">
-            <p className="font-display text-display-m max-w-[22ch] italic">
+            <p className="font-display font-extrabold text-display-m max-w-[22ch]">
               Something real ships in the spring.
             </p>
             <p className="text-body-l text-ash mt-8 max-w-[58ch]">
@@ -107,12 +107,12 @@ export default function Projects() {
           </div>
           <Eyebrow>The first project</Eyebrow>
           {isReal(site.firstProject) ? (
-            <p className="font-display text-display-l mt-6 max-w-[20ch] italic">
+            <p className="font-display font-extrabold text-display-l mt-6 max-w-[20ch]">
               {site.firstProject}
             </p>
           ) : (
             <>
-              <p className="font-display text-display-l mt-6 max-w-[20ch] italic">
+              <p className="font-display font-extrabold text-display-l mt-6 max-w-[20ch]">
                 {site.firstProjectFallback}
               </p>
               <TodoChip value={site.firstProject} />

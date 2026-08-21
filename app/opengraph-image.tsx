@@ -8,8 +8,8 @@ export const contentType = "image/png";
 export const alt = "The Forward Society";
 
 // The wordmark on ink. No photographs anywhere on the site, including here.
-// Bodoni is not available to the OG renderer without shipping a font file, so
-// this falls back to a system serif — the composition carries it.
+// Montserrat is not available to the OG renderer without shipping a font file,
+// so this falls back to a bold system sans — the composition carries it.
 export default function OpenGraphImage() {
   return new ImageResponse(
     (
@@ -22,7 +22,7 @@ export default function OpenGraphImage() {
           justifyContent: "space-between",
           background: "#141210",
           padding: "72px",
-          fontFamily: "Georgia, serif",
+          fontFamily: "Helvetica, Arial, sans-serif",
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
@@ -34,8 +34,8 @@ export default function OpenGraphImage() {
           <div
             style={{
               display: "flex",
-              fontSize: "104px",
-              fontStyle: "italic",
+              fontSize: "92px",
+              fontWeight: 800,
               color: "#F5F0EA",
               letterSpacing: "-0.02em",
             }}

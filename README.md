@@ -90,6 +90,10 @@ A visitor never sees the brackets. Replacing a placeholder is just deleting the
 Worth knowing before commissioning changes, because breaking these is what
 makes a site look generic:
 
+- **Two typefaces.** Montserrat at weight 800 for every headline, the wordmark,
+  and the uppercase labels; Inter for body copy. This is the same pairing
+  rutgersvip.com uses. Both are declared once in `app/layout.tsx` and never
+  loaded from a `<link>` tag.
 - **Five colours.** Bone, ink, ink-raised, scarlet, ash. Defined once at the top
   of `app/globals.css`. A sixth, `ash-on-ink`, exists only because plain ash
   fails contrast requirements on a dark background.

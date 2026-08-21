@@ -33,7 +33,7 @@ export default function Contact() {
         <div className="grid grid-cols-1 gap-10 md:grid-cols-12">
           <div className="md:col-span-4">
             <Eyebrow>Email</Eyebrow>
-            <p className="font-display text-display-m mt-5 italic">
+            <p className="font-display font-extrabold text-display-m mt-5">
               {isReal(links.email) ? (
                 <TextLink href={`mailto:${links.email}`}>
                   {links.email}
@@ -46,7 +46,7 @@ export default function Contact() {
 
           <div className="md:col-span-4">
             <Eyebrow>Instagram</Eyebrow>
-            <p className="font-display text-display-m mt-5 italic">
+            <p className="font-display font-extrabold text-display-m mt-5">
               <TextLink href={links.instagram}>{instagramHandle}</TextLink>
             </p>
           </div>
@@ -54,7 +54,7 @@ export default function Contact() {
           <div className="md:col-span-4">
             <Eyebrow>Involvement fair</Eyebrow>
             {isReal(site.fairLocation) ? (
-              <p className="font-display text-display-m mt-5 max-w-[16ch] italic">
+              <p className="font-display font-extrabold text-display-m mt-5 max-w-[16ch]">
                 {site.fairLocation}
               </p>
             ) : (
@@ -74,21 +74,21 @@ export default function Contact() {
         <Eyebrow>Write to us if you are</Eyebrow>
         <div className="mt-12 grid grid-cols-1 gap-10 md:grid-cols-12">
           <div className="md:col-span-4">
-            <h2 className="font-display text-display-m italic">A student</h2>
+            <h2 className="font-display font-extrabold text-display-m">A student</h2>
             <p className="text-body-l text-ash mt-4 max-w-[36ch]">
               Ask anything the Join page did not answer. If applications have
               closed, say so and we will tell you when the next round opens.
             </p>
           </div>
           <div className="md:col-span-4">
-            <h2 className="font-display text-display-m italic">A speaker</h2>
+            <h2 className="font-display font-extrabold text-display-m">A speaker</h2>
             <p className="text-body-l text-ash mt-4 max-w-[36ch]">
               Tell us the problem you are working on rather than your title. One
               evening, no prepared deck required.
             </p>
           </div>
           <div className="md:col-span-4">
-            <h2 className="font-display text-display-m italic">
+            <h2 className="font-display font-extrabold text-display-m">
               Faculty or a department
             </h2>
             <p className="text-body-l text-ash mt-4 max-w-[36ch]">

@@ -20,11 +20,11 @@ export function Timeline({ tone = "light" }: { tone?: "light" | "dark" }) {
             aria-hidden="true"
             className="bg-scarlet absolute top-[2.6rem] left-0 h-px w-3"
           />
-          <p className={`font-body text-eyebrow uppercase md:col-span-3 ${ash}`}>
+          <p className={`font-display text-eyebrow font-bold uppercase md:col-span-3 ${ash}`}>
             {entry.window}
           </p>
           <div className="md:col-span-8 md:col-start-5">
-            <h3 className="font-display text-display-m italic">{entry.title}</h3>
+            <h3 className="font-display font-extrabold text-display-m">{entry.title}</h3>
             <p className={`text-body mt-3 max-w-[56ch] ${ash}`}>{entry.body}</p>
           </div>
         </li>

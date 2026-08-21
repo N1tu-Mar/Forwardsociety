@@ -34,7 +34,7 @@ export default function Home() {
                 on ink and fails AA. Scarlet eyebrows are for bone only. */}
             <Eyebrow tone="dark">{copy.tagline}</Eyebrow>
 
-            <h1 className="font-display text-display-xl mt-8 max-w-[15ch] italic">
+            <h1 className="font-display font-extrabold text-display-xl mt-8 max-w-[15ch]">
               {copy.homeH1.before}
               <span className="text-scarlet">{copy.homeH1.emphasis}</span>
               {copy.homeH1.after}
@@ -68,7 +68,7 @@ export default function Home() {
             <Eyebrow tone="dark">The premise</Eyebrow>
           </div>
           <div className="md:col-span-8">
-            <p className="font-display text-display-m max-w-[24ch] italic">
+            <p className="font-display font-extrabold text-display-m max-w-[24ch]">
               Identifying the correct problem is half the work.
             </p>
             <p className="text-body-l text-ash-on-ink mt-8 max-w-[62ch]">
@@ -92,7 +92,7 @@ export default function Home() {
             <Eyebrow tone="dark">The method</Eyebrow>
           </div>
           <div className="md:col-span-8">
-            <h2 className="font-display text-display-l max-w-[18ch] italic">
+            <h2 className="font-display font-extrabold text-display-l max-w-[18ch]">
               Four steps, in order.
             </h2>
           </div>
@@ -127,7 +127,7 @@ export default function Home() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
           <div className="md:col-span-5">
             <Eyebrow>What members get</Eyebrow>
-            <h2 className="font-display text-display-l mt-6 max-w-[12ch] italic">
+            <h2 className="font-display font-extrabold text-display-l mt-6 max-w-[12ch]">
               Three things, plainly.
             </h2>
           </div>
@@ -151,7 +151,7 @@ export default function Home() {
           before the centred close. */}
       <Section tone="bone" rule="top">
         <Eyebrow>Who we&rsquo;re looking for</Eyebrow>
-        <p className="font-display text-display-l mt-8 max-w-[20ch] italic">
+        <p className="font-display font-extrabold text-display-l mt-8 max-w-[20ch]">
           {copy.whoLine1}
         </p>
         <p className="text-body-l text-ash mt-10 max-w-[54ch]">

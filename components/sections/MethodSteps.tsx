@@ -18,10 +18,10 @@ export function MethodSteps({ tone = "light" }: { tone?: "light" | "dark" }) {
             i === 0 ? "" : "md:border-l"
           } md:pr-8 md:pl-6 ${i === 0 ? "md:pl-0" : ""}`}
         >
-          <span className={`font-body text-eyebrow uppercase ${ash}`}>
+          <span className={`font-display text-eyebrow font-bold uppercase ${ash}`}>
             {step.index}
           </span>
-          <h3 className="font-display text-display-m mt-4 italic">
+          <h3 className="font-display font-extrabold text-display-m mt-4">
             {step.name}
           </h3>
           <p className={`text-body mt-2 ${ash}`}>{step.line}</p>

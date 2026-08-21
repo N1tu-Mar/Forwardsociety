@@ -134,7 +134,7 @@ export function Header() {
                     <Link
                       href={item.href}
                       aria-current={active ? "page" : undefined}
-                      className={`font-body text-eyebrow uppercase transition-colors duration-150 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-scarlet ${
+                      className={`font-display text-eyebrow font-bold uppercase transition-colors duration-150 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-scarlet ${
                         active ? (dark ? "text-bone" : "text-ink") : navText
                       }`}
                     >
@@ -149,7 +149,7 @@ export function Header() {
                     href={links.apply}
                     target="_blank"
                     rel="noreferrer noopener"
-                    className={`font-body text-eyebrow uppercase px-4 py-2.5 transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-scarlet ${
+                    className={`font-display text-eyebrow font-bold uppercase px-4 py-2.5 transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-scarlet ${
                       scrolled ? applyScrolled : applyResting
                     }`}
                   >
@@ -168,7 +168,7 @@ export function Header() {
             onClick={() => setMenuOpen(true)}
             aria-expanded={menuOpen}
             aria-controls="mobile-menu"
-            className={`font-body text-eyebrow uppercase focus-visible:outline-scarlet md:hidden focus-visible:outline-2 focus-visible:outline-offset-4 ${
+            className={`font-display text-eyebrow font-bold uppercase focus-visible:outline-scarlet md:hidden focus-visible:outline-2 focus-visible:outline-offset-4 ${
               dark ? "text-bone" : "text-ink"
             }`}
           >
@@ -190,7 +190,7 @@ export function Header() {
             <button
               type="button"
               onClick={closeMenu}
-              className="font-body text-eyebrow text-bone focus-visible:outline-scarlet uppercase focus-visible:outline-2 focus-visible:outline-offset-4"
+              className="font-display text-eyebrow font-bold text-bone focus-visible:outline-scarlet uppercase focus-visible:outline-2 focus-visible:outline-offset-4"
             >
               Close
             </button>
@@ -202,7 +202,7 @@ export function Header() {
                   <Link
                     href={item.href}
                     onClick={() => setMenuOpen(false)}
-                    className="font-display text-display-m focus-visible:outline-scarlet block py-5 italic focus-visible:outline-2 focus-visible:outline-offset-2"
+                    className="font-display font-extrabold text-display-m focus-visible:outline-scarlet block py-5 focus-visible:outline-2 focus-visible:outline-offset-2"
                   >
                     {item.label}
                   </Link>
@@ -215,7 +215,7 @@ export function Header() {
               href={links.apply}
               target="_blank"
               rel="noreferrer noopener"
-              className="bg-scarlet text-bone rounded-control font-body text-eyebrow focus-visible:outline-scarlet mt-10 inline-flex px-6 py-3.5 uppercase focus-visible:outline-2 focus-visible:outline-offset-3"
+              className="bg-scarlet text-bone rounded-control font-display text-eyebrow font-bold focus-visible:outline-scarlet mt-10 inline-flex px-6 py-3.5 uppercase focus-visible:outline-2 focus-visible:outline-offset-3"
             >
               Apply to join
             </a>

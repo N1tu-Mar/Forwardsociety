@@ -37,7 +37,7 @@ export default function Program() {
             <Eyebrow tone="dark">The weekly meeting</Eyebrow>
           </div>
           <div className="md:col-span-8">
-            <p className="font-display text-display-m max-w-[22ch] italic">
+            <p className="font-display font-extrabold text-display-m max-w-[22ch]">
               Mondays. Ninety minutes. Same shape every week.
             </p>
             <p className="text-body-l text-ash-on-ink mt-8 max-w-[58ch]">
@@ -52,7 +52,7 @@ export default function Program() {
       {/* ------------------------------------------ pressure-test format */}
       <Section tone="ink" rule="top">
         <Eyebrow tone="dark">The pressure test</Eyebrow>
-        <h2 className="font-display text-display-l mt-8 max-w-[18ch] italic">
+        <h2 className="font-display font-extrabold text-display-l mt-8 max-w-[18ch]">
           Three questions, asked every time.
         </h2>
         <div className="mt-14">
@@ -109,7 +109,7 @@ export default function Program() {
                     tone="dark"
                     index={workshop.window}
                   >
-                    <h3 className="font-display text-display-m italic">
+                    <h3 className="font-display font-extrabold text-display-m">
                       {workshop.title}
                     </h3>
                     <p className="text-body text-ash-on-ink mt-2 max-w-[52ch]">
@@ -128,7 +128,7 @@ export default function Program() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
           <div className="md:col-span-5">
             <Eyebrow tone="dark">Case exercises</Eyebrow>
-            <p className="font-display text-display-m mt-6 max-w-[16ch] italic">
+            <p className="font-display font-extrabold text-display-m mt-6 max-w-[16ch]">
               Directed problem-definition exercises.
             </p>
           </div>
@@ -153,7 +153,7 @@ export default function Program() {
           sections. */}
       <Section tone="ink" rule="top">
         <Eyebrow tone="dark">Guest sessions</Eyebrow>
-        <p className="font-display text-display-l mt-8 max-w-[22ch] italic">
+        <p className="font-display font-extrabold text-display-l mt-8 max-w-[22ch]">
           Guests bring a problem they have not finished solving.
         </p>
         <p className="text-body-l text-ash-on-ink mt-10 max-w-[58ch]">
@@ -170,7 +170,7 @@ export default function Program() {
       {/* -------------------------------------------------- timeline */}
       <Section tone="ink" rule="top">
         <Eyebrow tone="dark">The year</Eyebrow>
-        <h2 className="font-display text-display-l mt-8 max-w-[16ch] italic">
+        <h2 className="font-display font-extrabold text-display-l mt-8 max-w-[16ch]">
           Fall explores. Spring builds.
         </h2>
         <div className="mt-14">

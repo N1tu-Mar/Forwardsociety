@@ -22,7 +22,7 @@ export function ClosingCTA({ tone = "ink" }: { tone?: "ink" | "bone" }) {
         <div className="py-section flex flex-col items-center text-center">
           <h2
             id="closing-heading"
-            className="font-display text-display-xl max-w-[16ch] italic"
+            className="font-display font-extrabold text-display-xl max-w-[16ch]"
           >
             {copy.closingH2.before}
             <span className="text-scarlet">{copy.closingH2.emphasis}</span>

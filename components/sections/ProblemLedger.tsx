@@ -3,7 +3,7 @@ import { problems, problemsEmptyState } from "@/content/problems";
 
 /**
  * The ledger. Problem statements typeset like a print journal's minutes —
- * asterisk, hairline, ordinal, the problem in large italic, then a
+ * asterisk, hairline, ordinal, the problem set large, then a
  * WHY IT'S HARD column under it.
  *
  * When the list is empty this renders a written empty state in the same
@@ -37,11 +37,11 @@ export function ProblemLedger({ tone = "light" }: { tone?: "light" | "dark" }) {
             <div className="bg-scarlet/70 h-px flex-1" />
           </div>
 
-          <p className={`font-body text-eyebrow mt-6 uppercase ${ash}`}>
+          <p className={`font-display text-eyebrow font-bold mt-6 uppercase ${ash}`}>
             Proposal {problem.index}
           </p>
 
-          <h3 className="font-display text-display-l mt-5 max-w-[22ch] italic">
+          <h3 className="font-display font-extrabold text-display-l mt-5 max-w-[22ch]">
             {problem.statement}
           </h3>
 
@@ -49,7 +49,7 @@ export function ProblemLedger({ tone = "light" }: { tone?: "light" | "dark" }) {
             className={`mt-8 grid grid-cols-1 gap-2 border-b pb-8 md:grid-cols-12 md:gap-8 ${rule}`}
           >
             <p
-              className={`font-body text-eyebrow uppercase md:col-span-3 ${ash}`}
+              className={`font-display text-eyebrow font-bold uppercase md:col-span-3 ${ash}`}
             >
               Why it&rsquo;s hard
             </p>

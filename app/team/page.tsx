@@ -30,7 +30,7 @@ export default function Team() {
       />
 
       {/* Hairline-separated roster. No photographs and no boxes — the weight
-          comes from the name set large in italic. */}
+          comes from the name set large and heavy. */}
       <Section tone="bone" rule="top">
         <ul className="border-ink/15 border-t">
           {team.map((member) => (
@@ -39,7 +39,7 @@ export default function Team() {
               className="border-ink/15 grid grid-cols-1 gap-4 border-b py-10 md:grid-cols-12 md:gap-8"
             >
               <div className="md:col-span-6">
-                <h2 className="font-display text-display-m italic">
+                <h2 className="font-display font-extrabold text-display-m">
                   <PlaceholderText value={member.name} />
                 </h2>
               </div>

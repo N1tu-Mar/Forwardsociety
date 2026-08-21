@@ -16,7 +16,7 @@ const sizeClass: Record<Size, string> = {
 };
 
 /**
- * The wordmark. Bodoni Moda italic, middle word in scarlet.
+ * The wordmark. Montserrat 800, middle word in scarlet.
  * `whitespace-nowrap` is load-bearing — the mark must never wrap, including
  * in the 375px header.
  */
@@ -31,7 +31,7 @@ export function Wordmark({
 }) {
   return (
     <span
-      className={`font-display whitespace-nowrap italic ${sizeClass[size]} ${themeClass[theme]} ${className}`}
+      className={`font-display font-extrabold whitespace-nowrap ${sizeClass[size]} ${themeClass[theme]} ${className}`}
     >
       {wordmark.first} <span className="text-scarlet">{wordmark.middle}</span>{" "}
       {wordmark.last}

@@ -7,7 +7,7 @@ type Variant = "primary" | "ghost";
 type Tone = "light" | "dark";
 
 const base =
-  "inline-flex items-center justify-center font-body text-eyebrow uppercase px-6 py-3.5 transition-colors duration-150 focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-scarlet";
+  "inline-flex items-center justify-center font-display text-eyebrow font-bold uppercase px-6 py-3.5 transition-colors duration-150 focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-scarlet";
 
 const variantClass: Record<Variant, Record<Tone, string>> = {
   primary: {

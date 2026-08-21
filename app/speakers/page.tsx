@@ -38,19 +38,19 @@ function SpeakerCard({
         <div className="md:col-span-2">
           <span
             aria-hidden="true"
-            className="border-bone/25 text-scarlet font-display flex h-14 w-14 items-center justify-center border text-[1.5rem] italic"
+            className="border-bone/25 text-scarlet font-display font-extrabold flex h-14 w-14 items-center justify-center border text-[1.5rem]"
           >
             {name.trim().charAt(0)}
           </span>
         </div>
         <div className="md:col-span-7">
-          <h3 className="font-display text-display-m italic">{name}</h3>
+          <h3 className="font-display font-extrabold text-display-m">{name}</h3>
           <p className="text-body text-ash-on-ink mt-2">
             {role}, {org}
           </p>
         </div>
         <div className="md:col-span-3 md:text-right">
-          <p className="font-body text-eyebrow text-ash-on-ink uppercase">
+          <p className="font-display text-eyebrow font-bold text-ash-on-ink uppercase">
             {date}
           </p>
         </div>
@@ -98,7 +98,7 @@ export default function Speakers() {
         <div className="mt-12">
           {speakers.length === 0 ? (
             <div className="border-bone/15 border-t border-b py-14">
-              <p className="font-display text-display-m max-w-[24ch] italic">
+              <p className="font-display font-extrabold text-display-m max-w-[24ch]">
                 {speakersEmptyState}
               </p>
             </div>
@@ -117,7 +117,7 @@ export default function Speakers() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
           <div className="md:col-span-6">
             <Eyebrow tone="dark">For speakers</Eyebrow>
-            <h2 className="font-display text-display-l mt-6 max-w-[16ch] italic">
+            <h2 className="font-display font-extrabold text-display-l mt-6 max-w-[16ch]">
               Speak at the Forward Society.
             </h2>
           </div>

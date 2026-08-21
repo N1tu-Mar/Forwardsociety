@@ -1,17 +1,16 @@
 import type { Metadata } from "next";
-import { Bodoni_Moda, Inter } from "next/font/google";
+import { Montserrat, Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { GrowthCurve } from "@/components/brand/GrowthCurve";
 import { copy } from "@/content/copy";
 
-// Bodoni Moda is a variable font with an `opsz` axis. next/font requires
-// non-weight axes to be declared explicitly or the build fails.
-const bodoni = Bodoni_Moda({
+// Montserrat carries every headline, the wordmark, and the utility labels.
+// 800 is the display weight; 700 is the eyebrow weight.
+const montserrat = Montserrat({
   subsets: ["latin"],
-  style: ["normal", "italic"],
-  axes: ["opsz"],
+  weight: ["700", "800"],
   display: "swap",
   variable: "--font-display",
 });
@@ -42,7 +41,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${bodoni.variable} ${inter.variable}`}>
+    <html lang="en" className={`${montserrat.variable} ${inter.variable}`}>
       <body className="bg-bone text-ink">
         <a
           href="#main"
