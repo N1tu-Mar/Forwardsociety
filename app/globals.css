@@ -53,6 +53,10 @@
 
   --spacing-section: clamp(4.5rem, 9vw, 8rem);
   --container-shell: 1180px;
+
+  /* The scroll-linked growth curve is allowed to run only at this width and
+     above — that is the point where the right margin exists to hold it. */
+  --breakpoint-wide: 1180px;
 }
 
 /* ------------------------------------------------------------------

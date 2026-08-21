@@ -60,3 +60,12 @@ export function hasPlaceholder(value: string): boolean {
 }
 
 export const IS_DEV = process.env.NODE_ENV === "development";
+
+/**
+ * The confirmed part of a string, with unconfirmed spans removed.
+ * Use this for React keys and anchors so a placeholder never ends up in the
+ * shipped markup, not even inside a key attribute.
+ */
+export function stripPlaceholders(value: string): string {
+  return value.replace(/\[\[[A-Z0-9_]+\]\]/g, "").replace(/\s+/g, " ").trim();
+}
