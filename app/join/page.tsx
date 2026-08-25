@@ -32,7 +32,7 @@ export default function Join() {
       />
 
       {/* -------------------------------------------------- who applies */}
-      <Section tone="ink" rule="top">
+      <Section tone="ink">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
           <div className="md:col-span-4">
             <Eyebrow tone="dark">Who should apply</Eyebrow>
@@ -53,7 +53,7 @@ export default function Join() {
       {/* ---------------------------------------------------- the process */}
       {/* Rounds are read from content/process.ts — the count is never written
           into the copy, so a lighter fall process just renders fewer steps. */}
-      <Section tone="ink" rule="top">
+      <Section tone="ink">
         <Eyebrow tone="dark">The process</Eyebrow>
         <h2 className="font-display font-extrabold text-display-l mt-8 max-w-[16ch]">
           What happens after you apply.
@@ -81,7 +81,7 @@ export default function Join() {
       </Section>
 
       {/* ------------------------------------------------------ key dates */}
-      <Section tone="ink" rule="top">
+      <Section tone="ink">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
           <div className="md:col-span-4">
             <Eyebrow tone="dark">Key dates</Eyebrow>
@@ -96,7 +96,7 @@ export default function Join() {
       </Section>
 
       {/* ------------------------------------------------------------ FAQ */}
-      <Section tone="ink" rule="top">
+      <Section tone="ink">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
           <div className="md:col-span-4">
             <Eyebrow tone="dark">Questions</Eyebrow>

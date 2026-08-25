@@ -28,7 +28,7 @@ export default function Newsletter() {
       />
 
       {/* --------------------------------------------------- what goes out */}
-      <Section tone="bone" rule="top">
+      <Section tone="bone">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
           <div className="md:col-span-5">
             <Eyebrow>What you get</Eyebrow>
@@ -49,7 +49,7 @@ export default function Newsletter() {
       </Section>
 
       {/* ------------------------------------------------------- archive */}
-      <Section tone="bone" rule="top">
+      <Section tone="bone">
         <Eyebrow>Past issues</Eyebrow>
         <div className="mt-12">
           {dispatch.length === 0 ? (

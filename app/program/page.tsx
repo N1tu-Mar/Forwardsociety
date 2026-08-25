@@ -31,7 +31,7 @@ export default function Program() {
       />
 
       {/* -------------------------------------------------- the meeting */}
-      <Section tone="ink" rule="top">
+      <Section tone="ink">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
           <div className="md:col-span-4">
             <Eyebrow tone="dark">The weekly meeting</Eyebrow>
@@ -50,7 +50,7 @@ export default function Program() {
       </Section>
 
       {/* ------------------------------------------ pressure-test format */}
-      <Section tone="ink" rule="top">
+      <Section tone="ink">
         <Eyebrow tone="dark">The pressure test</Eyebrow>
         <h2 className="font-display font-extrabold text-display-l mt-8 max-w-[18ch]">
           Three questions, asked every time.
@@ -84,7 +84,7 @@ export default function Program() {
       </Section>
 
       {/* ---------------------------------------------------- workshops */}
-      <Section tone="ink" rule="top">
+      <Section tone="ink">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
           <div className="md:col-span-4">
             <Eyebrow tone="dark">Workshops</Eyebrow>
@@ -124,7 +124,7 @@ export default function Program() {
       </Section>
 
       {/* ----------------------------------------------- case exercises */}
-      <Section tone="ink" rule="top">
+      <Section tone="ink">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
           <div className="md:col-span-5">
             <Eyebrow tone="dark">Case exercises</Eyebrow>
@@ -151,7 +151,7 @@ export default function Program() {
       {/* Full-width statement rather than another 4/8 split — this page had
           three of those in a row and they had stopped reading as separate
           sections. */}
-      <Section tone="ink" rule="top">
+      <Section tone="ink">
         <Eyebrow tone="dark">Guest sessions</Eyebrow>
         <p className="font-display font-extrabold text-display-l mt-8 max-w-[22ch]">
           Guests bring a problem they have not finished solving.
@@ -168,7 +168,7 @@ export default function Program() {
       </Section>
 
       {/* -------------------------------------------------- timeline */}
-      <Section tone="ink" rule="top">
+      <Section tone="ink">
         <Eyebrow tone="dark">The year</Eyebrow>
         <h2 className="font-display font-extrabold text-display-l mt-8 max-w-[16ch]">
           Fall explores. Spring builds.

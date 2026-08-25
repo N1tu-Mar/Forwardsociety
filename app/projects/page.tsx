@@ -32,7 +32,7 @@ export default function Projects() {
       />
 
       {/* ------------------------------------------- how selection works */}
-      <Section tone="bone" rule="top">
+      <Section tone="bone">
         <Eyebrow>Selection</Eyebrow>
         <h2 className="font-display font-extrabold text-display-l mt-8 max-w-[18ch]">
           The club votes. One or two make it.
@@ -61,7 +61,7 @@ export default function Projects() {
       </Section>
 
       {/* ------------------------------------------ what launched means */}
-      <Section tone="bone" rule="top">
+      <Section tone="bone">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
           <div className="md:col-span-4">
             <Eyebrow>What launched means</Eyebrow>
@@ -81,7 +81,7 @@ export default function Projects() {
       </Section>
 
       {/* ------------------------------------------------- the candidates */}
-      <Section tone="bone" rule="top">
+      <Section tone="bone">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
           <div className="md:col-span-4">
             <Eyebrow>In the running</Eyebrow>
@@ -99,7 +99,7 @@ export default function Projects() {
       </Section>
 
       {/* ---------------------------------------------- the first project */}
-      <Section tone="bone" rule="top">
+      <Section tone="bone">
         <div className="border-ink/15 border-t border-b py-14">
           <div className="text-scarlet mb-8 flex items-center gap-3">
             <Asterisk size={12} />

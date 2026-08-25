@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
 import { PageHero } from "@/components/layout/PageHero";
-import { SectionRule } from "@/components/brand/SectionRule";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { TodoChip } from "@/components/ui/TodoChip";
 import { ClosingCTA } from "@/components/sections/ClosingCTA";
@@ -30,7 +29,7 @@ export default function About() {
       />
 
       {/* ------------------------------------------------------- mission */}
-      <Section tone="bone" rule="top">
+      <Section tone="bone">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
           <div className="md:col-span-4">
             <Eyebrow>Mission</Eyebrow>
@@ -57,7 +56,6 @@ export default function About() {
           differentiator, not a bullet. */}
       <section className="bg-ink-raised text-bone">
         <Container>
-          <SectionRule position="top" />
           <div className="py-section">
             <Eyebrow tone="dark">The founding belief</Eyebrow>
             <p className="font-display font-extrabold text-display-l mt-8 max-w-[20ch]">
@@ -81,7 +79,7 @@ export default function About() {
       </section>
 
       {/* --------------------------------------------- what it is not */}
-      <Section tone="bone" rule="top">
+      <Section tone="bone">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
           <div className="md:col-span-4">
             <Eyebrow>What it is not</Eyebrow>
@@ -124,7 +122,7 @@ export default function About() {
       </Section>
 
       {/* ---------------------------------------------- the year, in prose */}
-      <Section tone="bone" rule="top">
+      <Section tone="bone">
         <Eyebrow>The arc of the year</Eyebrow>
         <div className="mt-10 grid grid-cols-1 gap-8 md:grid-cols-12">
           <p className="text-body-l md:col-span-5 max-w-[52ch]">
@@ -142,7 +140,7 @@ export default function About() {
       </Section>
 
       {/* --------------------------------------------------- who joins */}
-      <Section tone="bone" rule="top">
+      <Section tone="bone">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
           <div className="md:col-span-4">
             <Eyebrow>Who should join</Eyebrow>
@@ -163,7 +161,6 @@ export default function About() {
       {/* ------------------------------------------- the closing moment */}
       <section className="bg-ink text-bone">
         <Container>
-          <SectionRule position="top" />
           <div className="py-section">
             {/* display-l, not xl: at xl the scarlet clause runs to two full
                 lines and blows past the 2% scarlet ceiling. */}

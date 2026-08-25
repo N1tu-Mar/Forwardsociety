@@ -1,6 +1,6 @@
 /**
- * Six-point scarlet asterisk. Anchors the left end of every section rule and
- * opens each entry in the problem ledger.
+ * Six-point scarlet asterisk. Opens each entry in the problem ledger and each
+ * problem on the projects page.
  *
  * Drawn as three crossed strokes rather than a glyph so it stays identical at
  * every size and never depends on a font being loaded.

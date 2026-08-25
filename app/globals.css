@@ -58,6 +58,14 @@
   --radius-control: 2px;
 
   --spacing-section: clamp(4.5rem, 9vw, 8rem);
+
+  /* The gap between a section rule and the content it caps. Deliberately far
+     smaller than --spacing-section: the rule has to read as belonging to the
+     section below it, not as floating midway between two of them. Spacing is
+     what groups here — the asymmetry is the whole point, so do not "tidy" this
+     back up into a symmetric py-. */
+  --spacing-section-tight: clamp(2.5rem, 4vw, 3.5rem);
+
   --container-shell: 1180px;
 
   /* The scroll-linked growth curve is allowed to run only at this width and

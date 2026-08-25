@@ -55,14 +55,18 @@ export default function Home() {
               </ButtonLink>
             </div>
 
-            <HeroCurve className="pointer-events-none absolute right-0 -bottom-2 hidden md:block" />
+            {/* bottom-10, not -bottom-2: the curve used to hang past the hero edge and
+                let the section rule below supply its clipped-off baseline, which only
+                worked while that rule was scarlet. It is neutral now, so the curve has
+                to clear it and carry its own flat baseline. */}
+            <HeroCurve className="pointer-events-none absolute right-0 bottom-10 hidden md:block" />
           </div>
         </Container>
       </section>
 
       {/* ------------------------------------------------- premise — ink */}
       {/* 5/7 split: label left, argument right. */}
-      <Section tone="ink" rule="top">
+      <Section tone="ink">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
           <div className="md:col-span-4">
             <Eyebrow tone="dark">The premise</Eyebrow>
@@ -86,7 +90,7 @@ export default function Home() {
       {/* -------------------------------------------------- method — ink */}
       {/* Four ruled columns — deliberately a different skeleton to the 4/8
           splits above and below it. */}
-      <Section tone="ink" rule="top">
+      <Section tone="ink">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
           <div className="md:col-span-4">
             <Eyebrow tone="dark">The method</Eyebrow>
@@ -104,7 +108,7 @@ export default function Home() {
 
       {/* ------------------------------------------- problem ledger — bone */}
       {/* THE FLIP. Belief becomes practice. */}
-      <Section tone="bone" rule="none" className="pb-0">
+      <Section tone="bone" divider={false} className="pb-0">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
           <div className="md:col-span-4">
             <Eyebrow>What we&rsquo;re working on</Eyebrow>
@@ -123,7 +127,7 @@ export default function Home() {
       </Section>
 
       {/* ------------------------------------------- members get — bone */}
-      <Section tone="bone" rule="none">
+      <Section tone="bone" divider={false}>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
           <div className="md:col-span-5">
             <Eyebrow>What members get</Eyebrow>
@@ -149,7 +153,7 @@ export default function Home() {
       {/* --------------------------------------------------- who — bone */}
       {/* Full-bleed statement, no column split — the last change of skeleton
           before the centred close. */}
-      <Section tone="bone" rule="top">
+      <Section tone="bone">
         <Eyebrow>Who we&rsquo;re looking for</Eyebrow>
         <p className="font-display font-extrabold text-display-l mt-8 max-w-[20ch]">
           {copy.whoLine1}

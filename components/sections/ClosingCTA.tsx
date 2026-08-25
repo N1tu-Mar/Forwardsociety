@@ -18,8 +18,8 @@ export function ClosingCTA({ tone = "ink" }: { tone?: "ink" | "bone" }) {
       aria-labelledby="closing-heading"
     >
       <Container>
-        <SectionRule position="top" />
-        <div className="py-section flex flex-col items-center text-center">
+        <SectionRule tone={dark ? "dark" : "light"} />
+        <div className="pt-section-tight pb-section flex flex-col items-center text-center">
           <h2
             id="closing-heading"
             className="font-display font-extrabold text-display-xl max-w-[16ch]"

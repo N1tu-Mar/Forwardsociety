@@ -31,7 +31,7 @@ export default function Team() {
 
       {/* Hairline-separated roster. No photographs and no boxes — the weight
           comes from the name set large and heavy. */}
-      <Section tone="bone" rule="top">
+      <Section tone="bone">
         <ul className="border-ink/15 border-t">
           {team.map((member) => (
             <li
@@ -64,7 +64,7 @@ export default function Team() {
       </Section>
 
       {/* --------------------------------------------------- joining it */}
-      <Section tone="bone" rule="none">
+      <Section tone="bone" divider={false}>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
           <div className="md:col-span-4">
             <Eyebrow>Running the club</Eyebrow>
