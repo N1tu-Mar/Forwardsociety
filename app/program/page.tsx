@@ -4,12 +4,16 @@ import { PageHero } from "@/components/layout/PageHero";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { RuledList, RuledRow } from "@/components/ui/RuledList";
 import { TextLink } from "@/components/ui/ButtonLink";
+import { TodoChip } from "@/components/ui/TodoChip";
 import { Timeline } from "@/components/sections/Timeline";
+import { ProblemLedger } from "@/components/sections/ProblemLedger";
 import { ClosingCTA } from "@/components/sections/ClosingCTA";
 import { workshops, workshopsEmptyState } from "@/content/workshops";
+import { site } from "@/content/site";
+import { isReal } from "@/lib/placeholder";
 
 const description =
-  "How a semester runs: weekly meetings, the pitch and pressure-test format, workshops, directed problem-definition exercises, and project teams forming in late fall.";
+  "How a semester runs: weekly meetings, workshops, guest sessions, directed problem-definition exercises, how projects get selected, and what launching one actually means.";
 
 export const metadata: Metadata = {
   title: "Program",
@@ -25,20 +29,20 @@ export default function Program() {
       <PageHero
         eyebrow="Program"
         title={<>How a semester actually runs.</>}
-        standfirst="One meeting a week, a fixed format, and a year that ends with something built."
+        standfirst="One meeting a week — guest speakers, workshops, discussions, and member proposals — and a year that ends with something built."
         tone="dark"
         curve
       />
 
       {/* -------------------------------------------------- the meeting */}
-      <Section tone="ink" rule="top">
+      <Section tone="ink">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
           <div className="md:col-span-4">
             <Eyebrow tone="dark">The weekly meeting</Eyebrow>
           </div>
           <div className="md:col-span-8">
             <p className="font-display font-extrabold text-display-m max-w-[22ch]">
-              Mondays. Ninety minutes. Same shape every week.
+              Mondays at 7:30 PM. Ninety minutes. Same shape every week.
             </p>
             <p className="text-body-l text-ash-on-ink mt-8 max-w-[58ch]">
               One or two members bring a problem. They get five minutes to state
@@ -49,42 +53,8 @@ export default function Program() {
         </div>
       </Section>
 
-      {/* ------------------------------------------ pressure-test format */}
-      <Section tone="ink" rule="top">
-        <Eyebrow tone="dark">The pressure test</Eyebrow>
-        <h2 className="font-display font-extrabold text-display-l mt-8 max-w-[18ch]">
-          Three questions, asked every time.
-        </h2>
-        <div className="mt-14">
-          <RuledList tone="dark">
-            <RuledRow tone="dark" index="01">
-              <p className="text-body-l max-w-[46ch]">
-                Is this the actual problem, or a symptom of one underneath it?
-              </p>
-            </RuledRow>
-            <RuledRow tone="dark" index="02">
-              <p className="text-body-l max-w-[46ch]">
-                Is it defined granularly enough that someone could act on it
-                this semester?
-              </p>
-            </RuledRow>
-            <RuledRow tone="dark" index="03">
-              <p className="text-body-l max-w-[46ch]">
-                What would have to be true for your solution to work — and how
-                would you find out?
-              </p>
-            </RuledRow>
-          </RuledList>
-          <p className="text-body text-ash-on-ink mt-8 max-w-[56ch]">
-            A problem that survives all three goes on the board. Most do not
-            survive the first pass, and the member who brought it comes back the
-            next week with a better version.
-          </p>
-        </div>
-      </Section>
-
       {/* ---------------------------------------------------- workshops */}
-      <Section tone="ink" rule="top">
+      <Section tone="ink">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
           <div className="md:col-span-4">
             <Eyebrow tone="dark">Workshops</Eyebrow>
@@ -124,7 +94,7 @@ export default function Program() {
       </Section>
 
       {/* ----------------------------------------------- case exercises */}
-      <Section tone="ink" rule="top">
+      <Section tone="ink">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
           <div className="md:col-span-5">
             <Eyebrow tone="dark">Case exercises</Eyebrow>
@@ -141,7 +111,7 @@ export default function Program() {
             </p>
             <p className="text-body text-ash-on-ink mt-6 max-w-[54ch]">
               They exist to make the weekly format automatic, so that by
-              November nobody needs to be reminded to ask the three questions.
+              November nobody needs reminding how to take a problem apart.
             </p>
           </div>
         </div>
@@ -151,7 +121,7 @@ export default function Program() {
       {/* Full-width statement rather than another 4/8 split — this page had
           three of those in a row and they had stopped reading as separate
           sections. */}
-      <Section tone="ink" rule="top">
+      <Section tone="ink">
         <Eyebrow tone="dark">Guest sessions</Eyebrow>
         <p className="font-display font-extrabold text-display-l mt-8 max-w-[22ch]">
           Guests bring a problem they have not finished solving.
@@ -167,8 +137,82 @@ export default function Program() {
         </p>
       </Section>
 
+      {/* ------------------------------------------- how selection works */}
+      {/* Moved here from the Projects page, which was merged into Program. */}
+      <Section tone="ink">
+        <Eyebrow tone="dark">Selection</Eyebrow>
+        <h2 className="font-display font-extrabold text-display-l mt-8 max-w-[18ch]">
+          The club votes. One or two make it.
+        </h2>
+        <div className="mt-14 grid grid-cols-1 gap-10 md:grid-cols-12">
+          <div className="md:col-span-4">
+            <p className="text-body-l max-w-[38ch]">
+              Every proposal that survived the fall goes to a vote of the whole
+              club. One or two are selected per year.
+            </p>
+          </div>
+          <div className="md:col-span-4">
+            <p className="text-body-l text-ash-on-ink max-w-[38ch]">
+              Teams are staffed from members who showed up consistently. Not
+              from whoever pitched loudest, and not from whoever has the most
+              relevant major.
+            </p>
+          </div>
+          <div className="md:col-span-4">
+            <p className="text-body-l text-ash-on-ink max-w-[38ch]">
+              The member who brought the problem does not automatically lead the
+              team, and does not have to be on it.
+            </p>
+          </div>
+        </div>
+        {/* The problem ledger lives here now — it is the list the vote above
+            chooses from, and this is the only place it appears on the site. */}
+        <div className="mt-16">
+          <ProblemLedger tone="dark" />
+        </div>
+      </Section>
+
+      {/* ------------------------------------------ what launched means */}
+      <Section tone="ink">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
+          <div className="md:col-span-4">
+            <Eyebrow tone="dark">What launched means</Eyebrow>
+          </div>
+          <div className="md:col-span-8">
+            <p className="font-display font-extrabold text-display-m max-w-[22ch]">
+              Something real ships in the spring.
+            </p>
+            <p className="text-body-l text-ash-on-ink mt-8 max-w-[58ch]">
+              A pilot running with actual users, a policy brief in front of
+              someone who can act on it, a service operating on a campus. A
+              slide deck is not a launch, and neither is a prototype nobody
+              outside the club has touched.
+            </p>
+          </div>
+        </div>
+      </Section>
+
+      {/* ---------------------------------------------- the first project */}
+      <Section tone="ink">
+        <div className="border-bone/15 border-t border-b py-14">
+          <Eyebrow tone="dark">The first project</Eyebrow>
+          {isReal(site.firstProject) ? (
+            <p className="font-display font-extrabold text-display-l mt-6 max-w-[20ch]">
+              {site.firstProject}
+            </p>
+          ) : (
+            <>
+              <p className="font-display font-extrabold text-display-l mt-6 max-w-[20ch]">
+                {site.firstProjectFallback}
+              </p>
+              <TodoChip value={site.firstProject} />
+            </>
+          )}
+        </div>
+      </Section>
+
       {/* -------------------------------------------------- timeline */}
-      <Section tone="ink" rule="top">
+      <Section tone="ink">
         <Eyebrow tone="dark">The year</Eyebrow>
         <h2 className="font-display font-extrabold text-display-l mt-8 max-w-[16ch]">
           Fall explores. Spring builds.

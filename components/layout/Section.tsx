@@ -11,17 +11,24 @@ const toneClass: Record<Tone, string> = {
 };
 
 /**
- * A page section: background tone, the scarlet frame, and the vertical
+ * A page section: background tone, the divider that opens it, and the vertical
  * rhythm. All spacing is a utility on this component — there are no global
  * element selectors for section padding anywhere in the project.
  *
- * `rule` controls the frame. Consecutive sections on the same background
- * should use 'top' only, so the rules do not double up into a 2px line.
+ * The padding is asymmetric on purpose. A ruled section hugs its rule
+ * (`pt-section-tight`) and leaves the generous gap below its content
+ * (`pb-section`), so each section reads as a unit that begins at its rule
+ * rather than as an evenly spaced block floating between two others.
+ *
+ * `divider={false}` is for a section that continues the one above it, or that
+ * already announces itself with a change of background tone — a rule there
+ * would be marking a boundary the colour has already marked. Those sections
+ * keep symmetric padding, since there is no rule for them to hug.
  */
 export function Section({
   children,
   tone = "bone",
-  rule = "top",
+  divider = true,
   className = "",
   id,
   as: Tag = "section",
@@ -29,21 +36,19 @@ export function Section({
 }: {
   children: ReactNode;
   tone?: Tone;
-  rule?: "top" | "bottom" | "both" | "none";
+  divider?: boolean;
   className?: string;
   id?: string;
   as?: "section" | "div" | "header" | "footer";
   labelledBy?: string;
 }) {
-  const showTop = rule === "top" || rule === "both";
-  const showBottom = rule === "bottom" || rule === "both";
+  const padding = divider ? "pt-section-tight pb-section" : "py-section";
 
   return (
     <Tag id={id} aria-labelledby={labelledBy} className={toneClass[tone]}>
       <Container>
-        {showTop ? <SectionRule position="top" /> : null}
-        <div className={`py-section ${className}`}>{children}</div>
-        {showBottom ? <SectionRule position="bottom" /> : null}
+        {divider ? <SectionRule tone={tone === "bone" ? "light" : "dark"} /> : null}
+        <div className={`${padding} ${className}`}>{children}</div>
       </Container>
     </Tag>
   );

@@ -73,7 +73,7 @@ export default function Speakers() {
       />
 
       {/* --------------------------------------------- what they talk about */}
-      <Section tone="ink" rule="top">
+      <Section tone="ink">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
           <div className="md:col-span-4">
             <Eyebrow tone="dark">What a session is</Eyebrow>
@@ -93,7 +93,7 @@ export default function Speakers() {
       </Section>
 
       {/* ----------------------------------------------------- the roster */}
-      <Section tone="ink" rule="top">
+      <Section tone="ink">
         <Eyebrow tone="dark">This semester</Eyebrow>
         <div className="mt-12">
           {speakers.length === 0 ? (
@@ -113,7 +113,7 @@ export default function Speakers() {
       </Section>
 
       {/* -------------------------------------------------- speak with us */}
-      <Section tone="ink" rule="top">
+      <Section tone="ink">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
           <div className="md:col-span-6">
             <Eyebrow tone="dark">For speakers</Eyebrow>

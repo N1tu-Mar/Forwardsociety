@@ -29,7 +29,7 @@ export default function Contact() {
       />
 
       {/* ------------------------------------------------------ channels */}
-      <Section tone="bone" rule="top">
+      <Section tone="bone">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-12">
           <div className="md:col-span-4">
             <Eyebrow>Email</Eyebrow>
@@ -70,7 +70,7 @@ export default function Contact() {
       </Section>
 
       {/* ------------------------------------------------- who you might be */}
-      <Section tone="bone" rule="top">
+      <Section tone="bone">
         <Eyebrow>Write to us if you are</Eyebrow>
         <div className="mt-12 grid grid-cols-1 gap-10 md:grid-cols-12">
           <div className="md:col-span-4">

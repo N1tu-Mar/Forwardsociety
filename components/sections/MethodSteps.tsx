@@ -1,7 +1,7 @@
 import { methodSteps } from "@/content/copy";
 
 /**
- * The method, 01–04. Four ruled columns on desktop, stacked on mobile.
+ * The method, 01–05. Five ruled columns on desktop, stacked on mobile.
  * The numbering is justified because the steps are a genuine sequence — you
  * cannot execute before you have proposed.
  */
@@ -10,7 +10,7 @@ export function MethodSteps({ tone = "light" }: { tone?: "light" | "dark" }) {
   const ash = tone === "dark" ? "text-ash-on-ink" : "text-ash";
 
   return (
-    <ol className="grid grid-cols-1 md:grid-cols-4">
+    <ol className="grid grid-cols-1 md:grid-cols-5">
       {methodSteps.map((step, i) => (
         <li
           key={step.index}

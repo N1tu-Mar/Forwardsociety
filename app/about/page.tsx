@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
 import { PageHero } from "@/components/layout/PageHero";
-import { SectionRule } from "@/components/brand/SectionRule";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { TodoChip } from "@/components/ui/TodoChip";
 import { ClosingCTA } from "@/components/sections/ClosingCTA";
@@ -30,7 +30,7 @@ export default function About() {
       />
 
       {/* ------------------------------------------------------- mission */}
-      <Section tone="bone" rule="top">
+      <Section tone="bone">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
           <div className="md:col-span-4">
             <Eyebrow>Mission</Eyebrow>
@@ -57,7 +57,6 @@ export default function About() {
           differentiator, not a bullet. */}
       <section className="bg-ink-raised text-bone">
         <Container>
-          <SectionRule position="top" />
           <div className="py-section">
             <Eyebrow tone="dark">The founding belief</Eyebrow>
             <p className="font-display font-extrabold text-display-l mt-8 max-w-[20ch]">
@@ -81,7 +80,7 @@ export default function About() {
       </section>
 
       {/* --------------------------------------------- what it is not */}
-      <Section tone="bone" rule="top">
+      <Section tone="bone">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
           <div className="md:col-span-4">
             <Eyebrow>What it is not</Eyebrow>
@@ -103,14 +102,14 @@ export default function About() {
                   Not a consulting club.
                 </dt>
                 <dd className="text-body-l text-ash mt-3 max-w-[56ch]">
-                  Nobody is advising a client. Members work on problems they
-                  chose, and in the spring they build the solution themselves
-                  rather than hand it over in a deck.
+                  Members work on problems they chose, and in the spring they
+                  build the solution themselves rather than hand it over in a
+                  deck.
                 </dd>
               </div>
               <div>
                 <dt className="font-display font-extrabold text-display-m">
-                  Not major-gated.
+                  Not major specific.
                 </dt>
                 <dd className="text-body-l text-ash mt-3 max-w-[56ch]">
                   Members come from engineering, finance, public policy, life
@@ -124,7 +123,7 @@ export default function About() {
       </Section>
 
       {/* ---------------------------------------------- the year, in prose */}
-      <Section tone="bone" rule="top">
+      <Section tone="bone">
         <Eyebrow>The arc of the year</Eyebrow>
         <div className="mt-10 grid grid-cols-1 gap-8 md:grid-cols-12">
           <p className="text-body-l md:col-span-5 max-w-[52ch]">
@@ -141,35 +140,20 @@ export default function About() {
         </div>
       </Section>
 
-      {/* --------------------------------------------------- who joins */}
-      <Section tone="bone" rule="top">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
-          <div className="md:col-span-4">
-            <Eyebrow>Who should join</Eyebrow>
-          </div>
-          <div className="md:col-span-8">
-            <p className="font-display font-extrabold text-display-m max-w-[24ch]">
-              {copy.whoLine1}
-            </p>
-            <p className="text-body-l text-ash mt-8 max-w-[56ch]">
-              You do not need an idea, a technical background, or a plan. You
-              need to be willing to have a belief taken apart in front of other
-              people and to keep going afterwards.
-            </p>
-          </div>
-        </div>
-      </Section>
-
       {/* ------------------------------------------- the closing moment */}
       <section className="bg-ink text-bone">
         <Container>
-          <SectionRule position="top" />
           <div className="py-section">
             {/* display-l, not xl: at xl the scarlet clause runs to two full
                 lines and blows past the 2% scarlet ceiling. */}
             <p className="font-display font-extrabold text-display-l max-w-[20ch]">
               {copy.altHeroLine.before}
-              <span className="text-scarlet">{copy.altHeroLine.emphasis}</span>
+              <Link
+                href="/join"
+                className="text-scarlet focus-visible:outline-scarlet underline-offset-8 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4"
+              >
+                {copy.altHeroLine.emphasis}
+              </Link>
             </p>
           </div>
         </Container>

@@ -30,7 +30,7 @@ export function PageHero({
       }`}
     >
       <Container>
-        <div className="relative pt-36 pb-20 md:pt-44 md:pb-24">
+        <div className="relative pt-36 pb-16 md:pt-44 md:pb-20">
           <Eyebrow tone={dark ? "dark" : "light"}>{eyebrow}</Eyebrow>
           <h1 className="font-display font-extrabold text-display-xl mt-8 max-w-[16ch]">
             {title}
@@ -46,8 +46,12 @@ export function PageHero({
               </p>
             </div>
           ) : null}
+          {/* bottom-10, not -bottom-2: the curve used to hang past the hero edge
+              and let the section rule below supply its clipped-off baseline,
+              which only worked while that rule was scarlet. It is neutral now,
+              so the curve has to clear it and carry its own flat baseline. */}
           {curve ? (
-            <HeroCurve className="pointer-events-none absolute right-0 -bottom-2 hidden md:block" />
+            <HeroCurve className="pointer-events-none absolute right-0 bottom-10 hidden md:block" />
           ) : null}
         </div>
       </Container>

@@ -24,13 +24,13 @@ export const copy = {
   tagline: "Ideas. People. Impact.",
 
   homeH1: {
-    before: "Built for students who want to do ",
-    emphasis: "more",
-    after: " than learn.",
+    before: "Challenge what exists. Build what comes ",
+    emphasis: "next",
+    after: ".",
   } satisfies EmphasisLine,
 
   homeHeroSub:
-    "The Forward Society connects ambitious students with real projects, real problems, and real opportunities to build.",
+    "We bring together students from every major to solve the problems that shape America and give you the skills, mentorship, and opportunities to make change.",
 
   altHeroLine: {
     before: "Don't just prepare for the future. ",
@@ -52,6 +52,9 @@ export const copy = {
     after: "",
   } satisfies EmphasisLine,
 
+  // NOTE: the group has flagged this closing line for replacement but has not
+  // agreed on the wording. Left as-is deliberately — it is the headline above
+  // the Apply button on every page, so it cannot simply be deleted.
   closingH2: {
     before: "Are you ready to move ",
     emphasis: "Forward",
@@ -82,7 +85,12 @@ export interface MethodStep {
 
 export const methodSteps: readonly MethodStep[] = [
   { index: "01", name: "Explore", line: "Discover real challenges" },
-  { index: "02", name: "Propose", line: "Develop your own solution" },
-  { index: "03", name: "Plan", line: "Build a plan to make it happen" },
-  { index: "04", name: "Execute", line: "Launch the project and create impact" },
+  {
+    index: "02",
+    name: "Learn",
+    line: "Build skills through workshops and mentors closer to the issue",
+  },
+  { index: "03", name: "Propose", line: "Develop your own solution" },
+  { index: "04", name: "Plan", line: "Build a plan to make it happen" },
+  { index: "05", name: "Execute", line: "Launch the project and create impact" },
 ] as const;

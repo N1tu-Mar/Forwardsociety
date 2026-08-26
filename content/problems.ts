@@ -26,4 +26,4 @@ export const problems: readonly Problem[] = [
 ] as const;
 
 export const problemsEmptyState =
-  "The first proposals come out of fall pitch sessions. They are posted here once the room has pressure-tested them.";
+  "The first proposals come out of fall pitch sessions. They are posted here once the room has selected them.";

@@ -16,8 +16,8 @@ export interface TimelineEntry {
 export const timeline: readonly TimelineEntry[] = [
   {
     window: "September 2026",
-    title: "Applications and first meetings",
-    body: "The club opens at the involvement fair, applications run for about two weeks, and the first meetings set the format for the semester.",
+    title: "Involvement fair and first meetings",
+    body: "The club opens at the involvement fair and the first meetings set the format for the semester.",
   },
   {
     window: "Fall 2026",
@@ -26,8 +26,8 @@ export const timeline: readonly TimelineEntry[] = [
   },
   {
     window: "Late fall 2026",
-    title: "Converge",
-    body: "The club votes. One or two proposals are selected and project teams are staffed from members who showed up consistently.",
+    title: "Applications and converge",
+    body: "Applications open. The club votes, one or two proposals are selected, and project teams are staffed from members who showed up consistently.",
   },
   {
     window: "Spring 2027",

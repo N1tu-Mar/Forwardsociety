@@ -167,9 +167,17 @@ makes a site look generic:
 - **Five colours.** Bone, ink, ink-raised, scarlet, ash. Defined once at the top
   of `app/globals.css`. A sixth, `ash-on-ink`, exists only because plain ash
   fails contrast requirements on a dark background.
-- **Scarlet is never a large fill.** Hairlines, the asterisk, one emphasised
+- **Scarlet is never a large fill.** The growth curve, the asterisk, one emphasised
   word per headline. If a screen looks more than about 2% red, something is
   wrong.
+- **Sections open with a neutral hairline, never a scarlet one.** The rule
+  spans both grid columns, which is what ties a section's label to the content
+  beside it — without it the two columns read as unrelated fragments. Its
+  weight matches the ruled lists, so every rule on the site is one colour.
+- **Section padding is asymmetric, and that is deliberate.** More space below a
+  section's content than above it, so the rule reads as belonging to the
+  section it opens rather than floating halfway between two of them. Do not
+  "tidy" `pt-section-tight pb-section` back into a symmetric `py-section`.
 - **No photographs.** The layouts are built to work on type and rules alone,
   which is why they still look finished with no images to add.
 - **Square corners.** The only exception is the apply button.

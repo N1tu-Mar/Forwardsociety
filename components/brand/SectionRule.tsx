@@ -1,26 +1,22 @@
-import { Asterisk } from "@/components/brand/Asterisk";
-
 /**
- * The section frame: a 1px scarlet hairline across the full width, anchored at
- * its left end by the asterisk on `top` rules. The `bottom` rule closes the
- * section and carries no mark.
+ * The section divider: a hairline across the container width, sitting at the
+ * top edge of the section it opens.
  *
- * The hairline is a 1px border, not a filled div, so it stays hairline-thin at
- * every device pixel ratio.
+ * It does two jobs, and the second is the load-bearing one. It marks where a
+ * section starts, and — because it spans the full grid — it ties a section's
+ * label column to the content column beside it. Without it the two columns
+ * read as unrelated fragments floating on the background.
+ *
+ * Neutral by design. The weight matches RuledList (15% of the foreground) so
+ * every rule on the site is the same colour. Scarlet is deliberately not used
+ * here: the accent belongs to the growth curve, the asterisk, and one
+ * emphasised word per headline, and a red line at every section boundary is
+ * what made the page look busy rather than framed.
+ *
+ * A 1px background, not a border, so it stays hairline-thin at every device
+ * pixel ratio.
  */
-export function SectionRule({
-  position = "top",
-}: {
-  position?: "top" | "bottom";
-}) {
-  if (position === "bottom") {
-    return <div aria-hidden="true" className="h-px w-full bg-scarlet/70" />;
-  }
-
-  return (
-    <div aria-hidden="true" className="flex w-full items-center gap-3">
-      <Asterisk size={10} className="text-scarlet" />
-      <div className="h-px flex-1 bg-scarlet/70" />
-    </div>
-  );
+export function SectionRule({ tone = "light" }: { tone?: "light" | "dark" }) {
+  const hairline = tone === "dark" ? "bg-bone/15" : "bg-ink/15";
+  return <div aria-hidden="true" className={`h-px w-full ${hairline}`} />;
 }

@@ -15,7 +15,7 @@ export function Footer() {
   return (
     <footer className="bg-ink text-bone">
       <Container>
-        <SectionRule position="top" />
+        <SectionRule tone="dark" />
         <div className="grid grid-cols-1 gap-12 py-16 md:grid-cols-12 md:gap-8">
           <div className="md:col-span-5">
             <Wordmark size="md" theme="dark" />
