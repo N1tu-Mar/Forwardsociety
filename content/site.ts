@@ -7,7 +7,8 @@
 
 export const site = {
   /** Official mission statement, once the founding team ratifies it. */
-  missionStatement: "[[MISSION_STATEMENT]]",
+  missionStatement:
+    "To foster the next generation of thinkers who challenge what exists, find possibility where others see problems, and create what comes next.",
   missionFallback:
     "The official mission statement is being written by the founding team. What the club does in the meantime is on this page.",
 

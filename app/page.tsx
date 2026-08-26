@@ -6,7 +6,6 @@ import { ButtonLink } from "@/components/ui/ButtonLink";
 import { RuledList, RuledRow } from "@/components/ui/RuledList";
 import { HeroCurve } from "@/components/brand/HeroCurve";
 import { MethodSteps } from "@/components/sections/MethodSteps";
-import { ProblemLedger } from "@/components/sections/ProblemLedger";
 import { ClosingCTA } from "@/components/sections/ClosingCTA";
 import { copy, memberBenefits } from "@/content/copy";
 import { links } from "@/content/links";
@@ -21,7 +20,7 @@ export const metadata: Metadata = {
 };
 
 // BACKGROUND INTENT: opens on ink and holds it through the method, then flips
-// to bone for the ledger onward. The flip marks the change from what the club
+// to bone for what members get onward. The flip marks the change from what the club
 // believes to what the club is actually doing.
 export default function Home() {
   return (
@@ -69,26 +68,27 @@ export default function Home() {
       <Section tone="ink">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
           <div className="md:col-span-4">
-            <Eyebrow tone="dark">The premise</Eyebrow>
+            <Eyebrow tone="dark">How we solve problems</Eyebrow>
           </div>
           <div className="md:col-span-8">
             <p className="font-display font-extrabold text-display-m max-w-[24ch]">
               Identifying the correct problem is half the work.
             </p>
             <p className="text-body-l text-ash-on-ink mt-8 max-w-[62ch]">
-              Most people meet a problem and start solving it immediately. This
-              club does the opposite. The first weeks go on arguing about
-              whether the problem is the real one, whether it is defined
-              granularly enough to act on, and what would have to be true for a
-              proposed solution to work. It is slower. It is also why the
-              proposals that survive the fall are worth building.
+              Most people meet a problem and start solving it. We do the
+              opposite. We dig into what&rsquo;s actually driving it,
+              challenging assumptions, pressure-testing every angle, and
+              learning from people who&rsquo;ve worked on it firsthand — until
+              we understand it at its root. Only then do we build. It&rsquo;s
+              harder than jumping to a solution, but it&rsquo;s the difference
+              between a project that looks good and one that actually works.
             </p>
           </div>
         </div>
       </Section>
 
       {/* -------------------------------------------------- method — ink */}
-      {/* Four ruled columns — deliberately a different skeleton to the 4/8
+      {/* Five ruled columns — deliberately a different skeleton to the 4/8
           splits above and below it. */}
       <Section tone="ink">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
@@ -97,32 +97,12 @@ export default function Home() {
           </div>
           <div className="md:col-span-8">
             <h2 className="font-display font-extrabold text-display-l max-w-[18ch]">
-              Four steps, in order.
+              Five steps, in order.
             </h2>
           </div>
         </div>
         <div className="mt-16">
           <MethodSteps tone="dark" />
-        </div>
-      </Section>
-
-      {/* ------------------------------------------- problem ledger — bone */}
-      {/* THE FLIP. Belief becomes practice. */}
-      <Section tone="bone" divider={false} className="pb-0">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
-          <div className="md:col-span-4">
-            <Eyebrow>What we&rsquo;re working on</Eyebrow>
-          </div>
-          <div className="md:col-span-8">
-            <p className="text-body-l text-ash max-w-[56ch]">
-              Problems members brought to the room, written as problems rather
-              than as pitches. The room decides which of them is worth a
-              semester.
-            </p>
-          </div>
-        </div>
-        <div className="mt-16">
-          <ProblemLedger tone="light" />
         </div>
       </Section>
 

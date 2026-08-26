@@ -51,9 +51,4 @@ export const team: readonly TeamMember[] = [
     role: "[[ROLE]]",
     focus: "[[FOCUS]]",
   },
-  {
-    name: "Roy [[LAST_NAME]]",
-    role: "[[ROLE]]",
-    focus: "[[FOCUS]]",
-  },
 ] as const;
