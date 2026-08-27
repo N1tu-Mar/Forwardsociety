@@ -78,8 +78,8 @@ export default function Home() {
               Most people meet a problem and start solving it. We do the
               opposite. We dig into what&rsquo;s actually driving it,
               challenging assumptions, pressure-testing every angle, and
-              learning from people who&rsquo;ve worked on it firsthand — until
-              we understand it at its root. Only then do we build. It&rsquo;s
+              learning from people who&rsquo;ve worked on it firsthand, until we
+              understand it at its root. Only then do we build. It&rsquo;s
               harder than jumping to a solution, but it&rsquo;s the difference
               between a project that looks good and one that actually works.
             </p>

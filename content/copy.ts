@@ -62,7 +62,7 @@ export const copy = {
   } satisfies EmphasisLine,
 
   closingSub:
-    "Be part of something that builds more than resumes — it builds real change.",
+    "Be part of something that builds more than resumes. It builds real change.",
 
   footerMeta: "Rutgers University · Launching Fall 2026",
 

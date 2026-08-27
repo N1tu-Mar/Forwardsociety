@@ -9,7 +9,7 @@ import { site } from "@/content/site";
 import { isReal } from "@/lib/placeholder";
 
 const description =
-  "How to reach the Forward Society — email, Instagram, and where to find us at the involvement fair.";
+  "How to reach the Forward Society by email or Instagram, and where to find us at the involvement fair.";
 
 export const metadata: Metadata = {
   title: "Contact",

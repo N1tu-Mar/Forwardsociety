@@ -29,7 +29,7 @@ export default function Program() {
       <PageHero
         eyebrow="Program"
         title={<>How a semester actually runs.</>}
-        standfirst="One meeting a week — guest speakers, workshops, discussions, and member proposals — and a year that ends with something built."
+        standfirst="One meeting a week of guest speakers, workshops, discussions, and member proposals, and a year that ends with something built."
         tone="dark"
         curve
       />
@@ -46,7 +46,7 @@ export default function Program() {
             </p>
             <p className="text-body-l text-ash-on-ink mt-8 max-w-[58ch]">
               One or two members bring a problem. They get five minutes to state
-              it — not to pitch a solution, to state the problem. Then the room
+              it. Not to pitch a solution, to state the problem. Then the room
               has thirty minutes to take it apart.
             </p>
           </div>
@@ -59,7 +59,7 @@ export default function Program() {
           <div className="md:col-span-4">
             <Eyebrow tone="dark">Workshops</Eyebrow>
             <p className="text-body text-ash-on-ink mt-5 max-w-[34ch]">
-              Skill sessions run alongside the meetings — scoping a problem,
+              Skill sessions run alongside the meetings. Scoping a problem,
               interviewing the people who have it, sizing what you are looking
               at.
             </p>
@@ -128,7 +128,7 @@ export default function Program() {
         </p>
         <p className="text-body-l text-ash-on-ink mt-10 max-w-[58ch]">
           Founders, operators, professors, and people running nonprofits. Not a
-          retrospective on how they succeeded — the room gets the same thirty
+          retrospective on how they succeeded. The room gets the same thirty
           minutes with them that it gets with a member.{" "}
           <TextLink href="/speakers" tone="dark">
             See who is speaking

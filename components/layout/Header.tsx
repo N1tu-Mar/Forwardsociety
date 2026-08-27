@@ -118,7 +118,7 @@ export function Header() {
           <Link
             href="/"
             className="focus-visible:outline-scarlet focus-visible:outline-2 focus-visible:outline-offset-4"
-            aria-label="The Forward Society — home"
+            aria-label="The Forward Society, home"
           >
             {/* md, not sm: at 24px the scarlet word clears the WCAG
                 large-text contrast bar on an ink background. */}
