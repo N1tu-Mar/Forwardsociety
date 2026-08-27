@@ -20,7 +20,7 @@ export const team: readonly TeamMember[] = [
   { name: "Nityanth Maramreddy" },
   { name: "Aarav Jain" },
   { name: "Cody Cardillo" },
-  { name: "Mahmood [[Selim]]" },
+  { name: "Mahmood Selim" },
   { name: "Parnika Khanna" },
   { name: "Armaan Mehta" },
   { name: "Prabhjit Singh" },
