@@ -25,7 +25,7 @@ export default function Team() {
       <PageHero
         eyebrow="Team"
         title={<>The founding team.</>}
-        standfirst="The people running the first year. Roles are still settling as the club takes shape."
+        standfirst="The people running the first year."
         tone="light"
       />
 
@@ -38,26 +38,18 @@ export default function Team() {
               key={stripPlaceholders(member.name)}
               className="border-ink/15 grid grid-cols-1 gap-4 border-b py-10 md:grid-cols-12 md:gap-8"
             >
-              <div className="md:col-span-6">
+              <div className="md:col-span-9">
                 <h2 className="font-display font-extrabold text-display-m">
                   <PlaceholderText value={member.name} />
                 </h2>
               </div>
-              <div className="md:col-span-3">
-                <p className="font-body text-eyebrow text-ash uppercase">
-                  <PlaceholderText value={member.role} />
-                </p>
-              </div>
-              <div className="md:col-span-3">
-                <p className="text-body text-ash">
-                  <PlaceholderText value={member.focus} />
-                </p>
-                {isReal(member.linkedin) ? (
-                  <p className="text-caption mt-3">
+              {isReal(member.linkedin) ? (
+                <div className="md:col-span-3 md:self-end">
+                  <p className="text-caption">
                     <TextLink href={member.linkedin}>LinkedIn</TextLink>
                   </p>
-                ) : null}
-              </div>
+                </div>
+              ) : null}
             </li>
           ))}
         </ul>
