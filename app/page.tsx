@@ -47,7 +47,7 @@ export default function Home() {
 
             <div className="mt-12 flex flex-wrap items-center gap-4">
               <ButtonLink href={links.apply} variant="primary" tone="dark">
-                Apply to join
+                Interest Form
               </ButtonLink>
               <ButtonLink href="/program" variant="ghost" tone="dark">
                 How it works

@@ -41,7 +41,7 @@ export function ClosingCTA({ tone = "ink" }: { tone?: "ink" | "bone" }) {
               variant="primary"
               tone={dark ? "dark" : "light"}
             >
-              Apply to join
+              Interest Form
             </ButtonLink>
           </div>
         </div>

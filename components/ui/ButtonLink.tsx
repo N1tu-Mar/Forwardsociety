@@ -23,7 +23,7 @@ const variantClass: Record<Variant, Record<Tone, string>> = {
 };
 
 /**
- * The only button in the system. Buttons name what happens — 'Apply to join',
+ * The only button in the system. Buttons name what happens — 'Interest Form',
  * not 'Learn more'.
  *
  * If `href` is still an unconfirmed placeholder the control does not render as

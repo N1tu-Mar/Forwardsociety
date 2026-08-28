@@ -153,7 +153,7 @@ export function Header() {
                       scrolled ? applyScrolled : applyResting
                     }`}
                   >
-                    Apply
+                    Interest Form
                   </a>
                 ) : (
                   <TodoChip value={links.apply} />
@@ -217,7 +217,7 @@ export function Header() {
               rel="noreferrer noopener"
               className="bg-scarlet text-bone rounded-control font-display text-eyebrow font-bold focus-visible:outline-scarlet mt-10 inline-flex px-6 py-3.5 uppercase focus-visible:outline-2 focus-visible:outline-offset-3"
             >
-              Apply to join
+              Interest Form
             </a>
           ) : (
             <div className="mt-10">
