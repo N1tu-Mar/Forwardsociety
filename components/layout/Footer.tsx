@@ -6,7 +6,7 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 import { TextLink } from "@/components/ui/ButtonLink";
 import { TodoChip } from "@/components/ui/TodoChip";
 import { footerNav } from "@/content/nav";
-import { links, instagramHandle } from "@/content/links";
+import { links } from "@/content/links";
 import { copy } from "@/content/copy";
 import { isReal } from "@/lib/placeholder";
 
@@ -43,11 +43,6 @@ export function Footer() {
           <div className="md:col-span-2 md:col-start-11">
             <Eyebrow tone="dark">Contact</Eyebrow>
             <ul className="mt-5 space-y-3">
-              <li>
-                <TextLink href={links.instagram} tone="dark" className="text-body">
-                  {instagramHandle}
-                </TextLink>
-              </li>
               <li>
                 {isReal(links.email) ? (
                   <TextLink

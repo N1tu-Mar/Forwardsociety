@@ -11,7 +11,7 @@ export const links = {
   apply:
     "https://docs.google.com/forms/d/e/1FAIpQLSdTyX3rUu57hdm9l-ExQfaZa6zTVuHOzyP7HpZziKFbnY7McA/viewform",
   newsletter: "[[NEWSLETTER_SIGNUP_URL]]",
-  email: "[[CLUB_EMAIL]]",
+  email: "theforwardsocietyru@gmail.com",
   instagram: "https://instagram.com/theforwardsocietyru",
 } as const;
 
