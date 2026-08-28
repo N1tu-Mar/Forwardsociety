@@ -30,10 +30,14 @@ export default function Contact() {
 
       {/* ------------------------------------------------------ channels */}
       <Section tone="bone">
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-12">
-          <div className="md:col-span-4">
+        {/* The email is the longest value on the page (30 characters in the
+            display face), so the split holds off until lg and email takes the
+            widest track. break-words is the last-resort guard: wrapping is
+            acceptable, overlapping the next column is not. */}
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-12">
+          <div className="lg:col-span-5">
             <Eyebrow>Email</Eyebrow>
-            <p className="font-display font-extrabold text-display-m mt-5">
+            <p className="font-display text-channel font-extrabold mt-5 break-words">
               {isReal(links.email) ? (
                 <TextLink href={`mailto:${links.email}`}>
                   {links.email}
@@ -44,17 +48,17 @@ export default function Contact() {
             </p>
           </div>
 
-          <div className="md:col-span-4">
+          <div className="lg:col-span-4">
             <Eyebrow>Instagram</Eyebrow>
-            <p className="font-display font-extrabold text-display-m mt-5">
+            <p className="font-display text-channel font-extrabold mt-5 break-words">
               <TextLink href={links.instagram}>{instagramHandle}</TextLink>
             </p>
           </div>
 
-          <div className="md:col-span-4">
+          <div className="lg:col-span-3">
             <Eyebrow>Involvement fair</Eyebrow>
             {isReal(site.fairLocation) ? (
-              <p className="font-display font-extrabold text-display-m mt-5 max-w-[16ch]">
+              <p className="font-display text-channel font-extrabold mt-5 max-w-[16ch]">
                 {site.fairLocation}
               </p>
             ) : (

@@ -37,6 +37,13 @@
   --text-display-m--line-height: 1.25;
   --text-display-m--letter-spacing: -0.015em;
 
+  /* One notch under display-m, for values that are long strings rather than
+     phrases — an email address, a handle. Same register, sized so a 30
+     character address clears its column instead of running into the next. */
+  --text-channel: clamp(1.125rem, 1.7vw, 1.375rem);
+  --text-channel--line-height: 1.35;
+  --text-channel--letter-spacing: -0.01em;
+
   /* Body sizes up one step from the original spec — the site is read on
      phones by prospective members, and 15px body was too tight for that. */
   --text-body-l: 1.125rem;
