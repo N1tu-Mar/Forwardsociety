@@ -24,7 +24,7 @@ export default function About() {
     <>
       <PageHero
         eyebrow="About"
-        title={<>What this club is.</>}
+        title={<>About The Forward Society.</>}
         standfirst={copy.overview}
         tone="light"
       />

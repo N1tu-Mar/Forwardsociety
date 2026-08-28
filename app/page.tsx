@@ -6,7 +6,6 @@ import { ButtonLink } from "@/components/ui/ButtonLink";
 import { RuledList, RuledRow } from "@/components/ui/RuledList";
 import { HeroCurve } from "@/components/brand/HeroCurve";
 import { MethodSteps } from "@/components/sections/MethodSteps";
-import { ClosingCTA } from "@/components/sections/ClosingCTA";
 import { copy, memberBenefits } from "@/content/copy";
 import { links } from "@/content/links";
 
@@ -75,13 +74,19 @@ export default function Home() {
               Identifying the correct problem is half the work.
             </p>
             <p className="text-body-l text-ash-on-ink mt-8 max-w-[62ch]">
-              Most people meet a problem and start solving it. We do the
-              opposite. We dig into what&rsquo;s actually driving it,
-              challenging assumptions, pressure-testing every angle, and
-              learning from people who&rsquo;ve worked on it firsthand, until we
-              understand it at its root. Only then do we build. It&rsquo;s
-              harder than jumping to a solution, but it&rsquo;s the difference
-              between a project that looks good and one that actually works.
+              <span className="text-scarlet font-bold">
+                Most people meet a problem and start solving it. We do the
+                opposite.
+              </span>{" "}
+              We dig into what&rsquo;s actually driving it, challenging
+              assumptions, pressure-testing every angle, and learning from
+              people who&rsquo;ve worked on it firsthand, until we understand it
+              at its root. Only then do we build.{" "}
+              <span className="text-scarlet font-bold">
+                It&rsquo;s harder than jumping to a solution, but it&rsquo;s the
+                difference between a project that looks good and one that
+                actually works.
+              </span>
             </p>
           </div>
         </div>
@@ -132,7 +137,7 @@ export default function Home() {
 
       {/* --------------------------------------------------- who — bone */}
       {/* Full-bleed statement, no column split — the last change of skeleton
-          before the centred close. */}
+          on the page, and where the homepage now ends. */}
       <Section tone="bone">
         <Eyebrow>Who we&rsquo;re looking for</Eyebrow>
         <p className="font-display font-extrabold text-display-l mt-8 max-w-[20ch]">
@@ -143,8 +148,6 @@ export default function Home() {
           <span className="text-scarlet">{copy.whoLine2.emphasis}</span>
         </p>
       </Section>
-
-      <ClosingCTA tone="bone" />
     </>
   );
 }
