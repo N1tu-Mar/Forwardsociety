@@ -6,6 +6,7 @@ import { ButtonLink } from "@/components/ui/ButtonLink";
 import { RuledList, RuledRow } from "@/components/ui/RuledList";
 import { HeroCurve } from "@/components/brand/HeroCurve";
 import { MethodSteps } from "@/components/sections/MethodSteps";
+import { ClosingCTA } from "@/components/sections/ClosingCTA";
 import { copy, memberBenefits } from "@/content/copy";
 import { links } from "@/content/links";
 
@@ -129,7 +130,7 @@ export default function Home() {
 
       {/* --------------------------------------------------- who — bone */}
       {/* Full-bleed statement, no column split — the last change of skeleton
-          on the page, and where the homepage now ends. */}
+          before the closing call to action. */}
       <Section tone="bone">
         <Eyebrow>Who we&rsquo;re looking for</Eyebrow>
         <p className="font-display font-extrabold text-display-l mt-8 max-w-[20ch]">
@@ -140,6 +141,9 @@ export default function Home() {
           <span className="text-scarlet">{copy.whoLine2.emphasis}</span>
         </p>
       </Section>
+
+      {/* ----------------------------------------------- closing cta — ink */}
+      <ClosingCTA tone="ink" />
     </>
   );
 }

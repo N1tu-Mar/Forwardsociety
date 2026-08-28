@@ -7,7 +7,6 @@ import { TextLink } from "@/components/ui/ButtonLink";
 import { TodoChip } from "@/components/ui/TodoChip";
 import { Timeline } from "@/components/sections/Timeline";
 import { ProblemLedger } from "@/components/sections/ProblemLedger";
-import { ClosingCTA } from "@/components/sections/ClosingCTA";
 import { workshops, workshopsEmptyState } from "@/content/workshops";
 import { site } from "@/content/site";
 import { isReal } from "@/lib/placeholder";
@@ -221,8 +220,6 @@ export default function Program() {
           <Timeline tone="dark" />
         </div>
       </Section>
-
-      <ClosingCTA tone="ink" />
     </>
   );
 }
