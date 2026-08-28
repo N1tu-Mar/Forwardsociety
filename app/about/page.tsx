@@ -5,7 +5,6 @@ import { Section } from "@/components/layout/Section";
 import { PageHero } from "@/components/layout/PageHero";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { TodoChip } from "@/components/ui/TodoChip";
-import { ClosingCTA } from "@/components/sections/ClosingCTA";
 import { copy } from "@/content/copy";
 import { site } from "@/content/site";
 import { isReal } from "@/lib/placeholder";
@@ -158,8 +157,6 @@ export default function About() {
           </div>
         </Container>
       </section>
-
-      <ClosingCTA tone="bone" />
     </>
   );
 }

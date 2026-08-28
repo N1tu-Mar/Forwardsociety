@@ -74,19 +74,12 @@ export default function Home() {
               Identifying the correct problem is half the work.
             </p>
             <p className="text-body-l text-ash-on-ink mt-8 max-w-[62ch]">
-              <span className="text-scarlet font-bold">
-                Most people meet a problem and start solving it. We do the
-                opposite.
-              </span>{" "}
-              We dig into what&rsquo;s actually driving it, challenging
-              assumptions, pressure-testing every angle, and learning from
-              people who&rsquo;ve worked on it firsthand, until we understand it
-              at its root. Only then do we build.{" "}
-              <span className="text-scarlet font-bold">
-                It&rsquo;s harder than jumping to a solution, but it&rsquo;s the
-                difference between a project that looks good and one that
-                actually works.
-              </span>
+              We start with deep research, bring in guest speakers, and learn
+              from people who have firsthand experience with the issue. From
+              there, we partner with local organizations to understand where we
+              can actually help and start building solutions. We start local,
+              learn what works, and use that experience to take on bigger
+              problems and create broader change.
             </p>
           </div>
         </div>
@@ -113,14 +106,13 @@ export default function Home() {
 
       {/* ------------------------------------------- members get — bone */}
       <Section tone="bone" divider={false}>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
-          <div className="md:col-span-5">
-            <Eyebrow>What members get</Eyebrow>
-            <h2 className="font-display font-extrabold text-display-l mt-6 max-w-[12ch]">
-              Three things, plainly.
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-12 md:gap-12">
+          <div className="md:col-span-6">
+            <h2 className="font-display font-extrabold text-display-l whitespace-nowrap">
+              What members get
             </h2>
           </div>
-          <div className="md:col-span-7">
+          <div className="md:col-span-6">
             <RuledList>
               {memberBenefits.map((benefit, i) => (
                 <RuledRow
